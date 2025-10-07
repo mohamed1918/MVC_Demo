@@ -40,7 +40,7 @@ namespace MVC_Demo
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             builder.Services.AddScoped<IAttachmentService, AttachmentService>();
 
-            builder.Services.AddIdentity<ApplicationUser ,IdentityRole >(options =>
+            builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
             {
                 options.Password.RequiredLength = 6;
                 options.Password.RequireUppercase = true;
